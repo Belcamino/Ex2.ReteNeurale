@@ -19,6 +19,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 import matplotlib.pyplot as plt
+import pandas as pd
 
 print(f"TensorFlow Version: {tf.__version__}")
 
@@ -74,8 +75,6 @@ model.compile(
 
 Ora addestriamo il modello utilizzando il metodo `fit()`. Forniamo i dati di input (X), i dati di output target (y), il numero di epoche (quante volte il modello vedrà l'intero dataset) e la dimensione del batch.
 """
-
-import pandas as pd
 
 history = model.fit(
     X, y,
